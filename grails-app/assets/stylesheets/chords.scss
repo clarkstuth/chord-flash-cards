@@ -1,0 +1,71 @@
+@import "compass/css3";
+
+body {
+    padding: 30px;
+}
+
+.chord {
+    float: left;
+    font-family: sans-serif;
+&, td, th {
+       border-collapse: separate;
+       border-spacing: 0;
+       margin: 0;
+       padding: 0;
+   }
+& {
+    margin-bottom: 20px;
+}
+th, td {
+    border-bottom: 1px solid;
+&:last-child {
+     border-bottom: none;
+ }
+}
+thead {
+th {
+    font-size: 20px;
+}
+td {
+    padding-top: 10px;
+}
+}
+tbody {
+td {
+    border-left: 1px solid;
+    width: 20px;
+    height: 20px;
+}
+}
+thead,
+tbody {
+*:first-child {
+    border: none;
+    width: 25px;
+}
+}
+.cj {
+    text-align: center;
+}
+i {
+    font-style: normal;
+    margin-left: -40%;
+&.open {
+&:before {
+     content: "\039f";
+ }
+}
+&.muted {
+&:before {
+     content: "\03a7";
+ }
+}
+&.dot {
+ @include border-radius(28px);
+     background: #000;
+     display: block;
+     width: 14px;
+     height: 14px;
+ }
+}
+}

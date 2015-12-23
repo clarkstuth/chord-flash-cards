@@ -1,0 +1,63 @@
+/*taken from http://codepen.io/tcmacdonald/pen/shgzG*/
+
+body {
+    padding: 30px;
+}
+
+.chord {
+    float: left;
+    font-family: sans-serif;
+}
+.chord, .chord td, .chord th {
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 0;
+    padding: 0;
+}
+.chord {
+    margin-bottom: 20px;
+}
+.chord th, .chord td {
+    border-bottom: 1px solid;
+}
+.chord th:last-child, .chord td:last-child {
+    border-bottom: none;
+}
+.chord thead th {
+    font-size: 20px;
+}
+.chord thead td {
+    padding-top: 10px;
+}
+.chord tbody td {
+    border-left: 1px solid;
+    width: 20px;
+    height: 20px;
+}
+.chord thead *:first-child,
+.chord tbody *:first-child {
+    border: none;
+    width: 25px;
+}
+.chord .cj {
+    text-align: center;
+}
+.chord i {
+    font-style: normal;
+    margin-left: -40%;
+}
+.chord i.open:before {
+    content: "\039f";
+}
+.chord i.muted:before {
+    content: "\03a7";
+}
+.chord i.dot {
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    border-radius: 28px;
+    background: #000;
+    display: block;
+    width: 14px;
+    height: 14px;
+}
